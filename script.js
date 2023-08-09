@@ -62,30 +62,31 @@ function playRound (playerSelection, computerSelection) {
 
 function game() {
 
-    playerSelection = window.prompt("What ya choosing?");
+    //playerSelection = window.prompt("What ya choosing?");
     const roundOne = playRound (playerSelection, getComputerChoice()); 
     scoreOne = Number(roundOne);
     console.log(scoreOne);
-
-    playerSelection = window.prompt("What ya choosing?");
+    
+    //playerSelection = window.prompt("What ya choosing?");
     const roundTwo = playRound (playerSelection, getComputerChoice());
     scoreTwo = scoreOne + Number(roundTwo);
     console.log(scoreTwo);
 
-    playerSelection = window.prompt("What ya choosing?");
+    //playerSelection = window.prompt("What ya choosing?");
     const roundThree = playRound (playerSelection, getComputerChoice());
     scoreThree = scoreTwo + Number(roundThree);
     console.log(scoreThree);
 
-    playerSelection = window.prompt("What ya choosing?");
+    //playerSelection = window.prompt("What ya choosing?");
     const roundFour = playRound (playerSelection, getComputerChoice());
     scoreFour = scoreThree + Number(roundFour);
     console.log(scoreFour);
 
-    playerSelection = window.prompt("What ya choosing?");
+    //playerSelection = window.prompt("What ya choosing?");
     const roundFive = playRound (playerSelection, getComputerChoice());
     scoreFive = scoreFour + Number(roundFive);
     console.log(scoreFive);
+    
 
     if (scoreFive > 0) {
         console.log("You won the 5 rounds!!")
@@ -96,3 +97,21 @@ function game() {
     }
 }
 
+//Here I add event selectors to each button:
+
+const rockPress = document.querySelector(".rockBtn");
+const paperPress = document.querySelector(".paperBtn");
+const scissorsPress = document.querySelector(".scissorsBtn");
+
+rockPress.addEventListener('click',() => {
+    playerSelection="rock";
+    console.log(playerSelection);
+});
+paperPress.addEventListener('click',() => {
+    playerSelection="paper";
+    console.log(playerSelection);
+});
+scissorsPress.addEventListener('click',() => {
+    playerSelection="scissors";
+    console.log(playerSelection);
+});
