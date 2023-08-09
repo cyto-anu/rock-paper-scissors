@@ -10,22 +10,25 @@
 <body>
     <div class="title">
         <h1> Rock Paper Scissors</h1>
-        <h2 class="directions">You'll be playing a five round game versus the computer. Choose wisely!</h2>
+        <h2 class="directions">The first to score 5 points wins <br></br>Let the battle between carbon and silicon begin!</h2>
     </div>
     <div class = "buttons">
-        <button class="button rockBtn">
+        <button id="rock" class="button rockBtn">
             <img class ="btnPic" src="images/theRock.png">
         </button>
-        <button class="button paperBtn">
+        <button id="paper" class="button paperBtn">
             <img class="btnPic" src="images/oldPaper.jpeg">
         </button>
-        <button class="button scissorsBtn">
+        <button id="scissors" class="button scissorsBtn">
             <img class= "btnPic" src="images/oldScissors.png">
         </button>
     </div>
-    <div class="score">
-        <h2>You:</h2>
-        <h2>Computer:</h2>
+    <h2 class="choices"></h2>
+    <div class="scoreBoard">
+        
+        <h2 class="playerScore">You : 0</h2>
+        <h2 class="computerScore">AGI : 0</h2>
     </div>
+    
 </body>
 </html>

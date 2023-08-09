@@ -1,3 +1,6 @@
+html {
+    background-color: lightcyan;
+}
 .title {
     display: flex;
     flex-direction: column;
@@ -9,6 +12,7 @@
 
 .directions {
     padding: 5px;
+    text-align: center;
 }
 
 .buttons {
@@ -17,7 +21,7 @@
     justify-content: center;
     gap: 10px;
     padding:20px;
-    background-color: rgb(248, 212, 212);
+    background-color: lightcyan;
 }
 
 .btnPic {
@@ -29,5 +33,20 @@
 .button {
     background-color:whitesmoke;
     border-radius: 7px;
-    border-width: 1px;
+    border-width: 2px;
+}
+
+.scoreBoard{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+    background-color: lightcyan;
+}
+
+.choices{
+    display: flex;
+    background-color: lightcyan;
+    height: auto;
+    margin: auto;
+    justify-content: center;
 }
